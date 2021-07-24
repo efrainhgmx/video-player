@@ -7,3 +7,25 @@
     background-position: center;
     cursor: pointer;
 }
+
+.button:active {
+    transform: scale(.9);
+  }
+  
+  #play {
+    background-image: url('../assets/play-icon.svg');
+  
+  }
+  
+  #pause {
+    background-image: url('../assets/pause-icon.svg');
+  }
+  
+  #backward {
+    background-image: url('../assets/backward-icon.svg');
+  
+  }
+  
+  #forward {
+    background-image: url('../assets/forward-icon.svg');
+  }
