@@ -37,3 +37,26 @@ body {
     align-items: center;
     gap: 20px;
 }
+
+.player-progress {
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+}
+
+.player-progress input {
+    flex: 1;
+}
+
+.player-overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.player:hover .player-overlay {
+    opacity: 1;
+}
