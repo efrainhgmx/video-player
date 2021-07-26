@@ -21,8 +21,11 @@ function handleBackward() {
 }
 
 function handleForward() {
-    $video.currentTime += 10
+    $video.currentTime += 10;
 }
 
 $playButton.addEventListener('click', handlePlay);
 $pauseButton.addEventListener('click', handlePause);
+
+$backwardButton.addEventListener('click', handleBackward);
+$forwardButton.addEventListener('click', handleForward);
