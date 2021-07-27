@@ -9,6 +9,10 @@ function handleLoaded() {
     $progressBar.max = $video.duration;
 }
 
+function handleTimeUpdate() {
+    $progressBar.value = $video.currentTime;
+}
+
 function handlePlay() {
     $video.play();
     $playButton.hidden = true;
@@ -30,6 +34,7 @@ function handleForward() {
 }
 
 $video.addEventListener('loadedmetadata', handleLoaded);
+$video.addEventListener('timeupdate', handleTimeUpdate);
 
 $playButton.addEventListener('click', handlePlay);
 $pauseButton.addEventListener('click', handlePause);
