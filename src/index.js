@@ -7,6 +7,7 @@ const $progressBar = document.querySelector('#progress');
 
 function handleLoaded() {
     $progressBar.max = $video.duration;
+    $pauseButton.hidden = true;
 }
 
 function handleTimeUpdate() {
