@@ -13,6 +13,10 @@ function handleTimeUpdate() {
     $progressBar.value = $video.currentTime;
 }
 
+function handelInput() {
+    $video.currentTime = $progressBar.value;
+}
+
 function handlePlay() {
     $video.play();
     $playButton.hidden = true;
@@ -35,6 +39,8 @@ function handleForward() {
 
 $video.addEventListener('loadedmetadata', handleLoaded);
 $video.addEventListener('timeupdate', handleTimeUpdate);
+
+$progressBar.addEventListener('input', handelInput);
 
 $playButton.addEventListener('click', handlePlay);
 $pauseButton.addEventListener('click', handlePause);
