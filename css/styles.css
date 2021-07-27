@@ -50,6 +50,10 @@ body {
     flex: 1;
 }
 
+.player-progress input:hover {
+    cursor: pointer;
+}
+
 .player-overlay {
     position: absolute;
     inset: 0;
